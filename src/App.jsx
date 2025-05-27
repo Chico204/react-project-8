@@ -26,11 +26,11 @@ function App() {
     <form className='lorem-form text-center' onSubmit={handleSubmit}>
       <label htmlFor="amount " className='text-xl'>Paragraphs:</label>
       <input type="number" id='amount' value={count} className='py-0.25 px-0.5 w-10 bg-gray-300 rounded-md border-0 outline-none' onChange ={(e)=> setCount(e.target.value)} />
-      <button className='btn bg-green-500  transition-300 cursor-pointer rounded-md p-1 text-center items-center font-bold m-5 hover:bg-green-700 '>Generate</button>
+      <button className='btn bg-green-500  transition-300 cursor-pointer rounded-md p-1 text-center items-center  m-5 hover:bg-green-700 shadow-md text-white'>Generate</button>
     </form>
-    <article className='lorem-text'>
+    <article className='lorem-text text-center px-5 py-2 mt-4 mb-5  '>
       {text.map((item, index) => {
-        return <p key={index}>{item}</p>
+        return <p className='mb-3' key={index}>{item}</p>
       })}
     </article>
    </section>
